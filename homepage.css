@@ -1,10 +1,49 @@
-.jasonBoxes {
-  display: flex;
+body {
+  margin: 0;
+}
+.jFlex {
+  display:Flex;
+}
+.container {
+  max-width: 1000px;
   width: 100%;
-
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
-.jasonBox {
+/* HEADER */
+.jasonHeader {
+  flex-wrap: wrap;
+}
+.jasonHeader .headerName {
+  text-align: center;
+}
+.jasonHeader .headerSocial {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.jasonHeader .headerSocial i {
+  margin: 10px;
+  font-size: 2rem;
+}
+.jasonHeader .headerLogo,
+.jasonHeader .headerName {
   width: 50%;
-
 }
+
+/* SKILLS */
+.jasonSkills {
+  background-color: lightgrey;
+}
+.skillsLeft {
+  width: 50%;
+}
+.skillsLeft ul {
+  width: 50%;
+}
+.skillsRight {
+  width: 50%;
+}
+
+/* PREVIOUS WORK */
