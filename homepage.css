@@ -1,0 +1,10 @@
+.jasonBoxes {
+  display: flex;
+  width: 100%;
+
+}
+
+.jasonBox {
+  width: 50%;
+
+}
