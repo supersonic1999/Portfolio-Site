@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+}
+.jFlex {
+  display:Flex;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.jasonHeader {
+  flex-wrap: wrap;
+
+  .headerName {
+    text-align: center;
+  }
+  .headerSocial {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .headerSocial i {
+    margin: 10px;
+    font-size: 2rem;
+  }
+  .headerLogo,
+  .headerName {
+    width: 50%;
+  }
+}
+
+/* SKILLS */
+.jasonSkills {
+  .skillsLeft {
+    width: 50%;
+  }
+  .skillsLeft ul {
+    width: 50%;
+  }
+  .skillsRight {
+    width: 50%;
+  }
+}
+
+/* PREVIOUS WORK */
+.jasonWork {
+  text-align: center;
+  background-color: lightgrey;
+  padding: 50px 0;
+
+  .jasonWork h1 {
+    margin-top: 0;
+  }
+  .workBoxes {
+    justify-content: center;
+  }
+  .workBox {
+    max-width: 250px;
+    width: 30%;
+    border: 1px solid black;
+    margin-right: 20px;
+    min-height: 200px;
+    background-color: white;
+  }
+}
+
+/* ABOUT */
+.jasonAbout {
+  padding: 50px 0;
+
+  .container {
+    justify-content: space-between;;
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    width: 25%;
+  }
+  p {
+    width: 70%;
+  }
+}

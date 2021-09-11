@@ -1,0 +1,8 @@
+[
+  {
+    "srcDir": "",
+    "destDir": "",
+    "files": "*.scss",
+    "command": "sass jasontheme.scss ../homepage.css"
+  }
+]
