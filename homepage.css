@@ -2,8 +2,17 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
 .jFlex {
   display: Flex;
+  justify-content: space-between;
 }
 
 .container {
@@ -24,10 +33,12 @@ body {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  margin-right: 20px;
 }
 .jasonHeader .headerSocial i {
   margin: 10px;
   font-size: 2rem;
+  color: grey;
 }
 .jasonHeader .headerLogo,
 .jasonHeader .headerName {
@@ -35,6 +46,9 @@ body {
 }
 
 /* SKILLS */
+.jasonSkills {
+  margin: 50px 0;
+}
 .jasonSkills .skillsLeft {
   width: 50%;
 }
@@ -51,19 +65,26 @@ body {
   background-color: lightgrey;
   padding: 50px 0;
 }
-.jasonWork .jasonWork h1 {
+.jasonWork h1 {
   margin-top: 0;
 }
 .jasonWork .workBoxes {
   justify-content: center;
 }
-.jasonWork .workBox {
+.jasonWork .workBoxes .workBox {
   max-width: 250px;
   width: 30%;
   border: 1px solid black;
   margin-right: 20px;
   min-height: 200px;
   background-color: white;
+  transition: all 0.35s ease;
+}
+.jasonWork .workBoxes .workBox:hover {
+  transform: scale(1.05);
+}
+.jasonWork .workBoxes:hover .workBox:not(:hover) {
+  opacity: 0.5;
 }
 
 /* ABOUT */
@@ -77,11 +98,57 @@ body {
   width: 100%;
   text-align: center;
 }
-.jasonAbout img {
-  width: 25%;
-}
 .jasonAbout p {
   width: 70%;
+}
+
+/* PORTRAIT */
+.jason {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+}
+.jason * {
+  position: absolute;
+}
+.jason .head {
+  width: 120px;
+  height: 150px;
+  left: 40px;
+  top: 0;
+  background: #ffecb8;
+  border-radius: 25% 30% 28% 27%/17% 22% 26% 25%;
+}
+.jason .leftEye,
+.jason .rightEye {
+  width: 10px;
+  height: 20px;
+  background: darkblue;
+  border-radius: 25% 30% 28% 27%/17% 22% 26% 25%;
+}
+.jason .leftEye {
+  left: 70px;
+  top: 40px;
+}
+.jason .rightEye {
+  right: 70px;
+  top: 40px;
+}
+.jason .leftEyebrow .rightEyebrow {
+  width: 20px;
+  height: 10px;
+  background: #ffd04f;
+  border-radius: 25% 30% 28% 27%/17% 22% 26% 25%;
+}
+.jason .leftEyebrow {
+  left: 70px;
+  top: 30px;
+}
+.jason .rightEyebrow {
+  right: 70px;
+  top: 30px;
 }
 
 /*# sourceMappingURL=homepage.css.map */
